@@ -19,6 +19,9 @@ public class Main {
         Ravenclaw marcus = new Ravenclaw("Маркус Белби", 71, 41, 31, 51, 61, 81);
         System.out.println("Задание 2 - Метод, который выводит на экран описание студента:");
         System.out.println(harry.toString());
+        System.out.println(draco.toString());
+        System.out.println(zachariah.toString());
+        System.out.println(zhou.toString());
         System.out.println("Задание 3 - " +
                 "Реализовать 4 метода, которые сравнивают между собой двух учеников одного факультета по свойствам:");
         System.out.print("1)");
