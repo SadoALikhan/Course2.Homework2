@@ -17,8 +17,19 @@ public class Main {
         Ravenclaw zhou = new Ravenclaw("Чжоу Чанг", 56, 74, 33, 39, 41, 80);
         Ravenclaw padma = new Ravenclaw("Падма Патил", 76, 39, 54, 44, 59, 69);
         Ravenclaw marcus = new Ravenclaw("Маркус Белби", 71, 41, 31, 51, 61, 81);
-        System.out.println(cedric.toString());
-        harry.compare(harry, draco);
+        System.out.println("Задание 2 - Метод, который выводит на экран описание студента:");
+        System.out.println(harry.toString());
+        System.out.println("Задание 3 - " +
+                "Реализовать 4 метода, которые сравнивают между собой двух учеников одного факультета по свойствам:");
+        System.out.print("1)");
         harry.compareGryffindor(harry, hermione);
+        System.out.print("2)");
+        draco.compareSlytherin(draco, graham);
+        System.out.print("3)");
+        zachariah.compareHufflepuff(zachariah, cedric);
+        System.out.print("4)");
+        zhou.compareRavenclaw(zhou, marcus);
+        System.out.println("Задание 4 - Метод, который сравнивает двух любых учеников Хогвартса по основным способностям:");
+        harry.compare(harry, draco);
     }
 }
