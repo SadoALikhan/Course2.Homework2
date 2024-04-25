@@ -29,23 +29,19 @@ public abstract class Hogwarts {
         this.apparition = apparition;
     }
 
-    public void compare(Hogwarts student, Hogwarts student1) {
-        if (student.getPowerOfMagic() > student1.getPowerOfMagic()) {
-            if (student.getApparition() > student1.getApparition()) {
-                System.out.println("Студент " + student.getName() + " в сравнении со студентом " + student1.getName()
-                        + " обладает бОльшей мощностью магии и большим растоянием трансгрессии.");
-            } else if (student.getApparition() < student1.getApparition())
-                System.out.println("Студент " + student.getName() + " в сравнении со студентом " + student1.getName()
-                        + " обладает бОльшей мощностью магии, но меньшим растоянием трансгрессии.");
-        } else if (student.getPowerOfMagic() < student1.getPowerOfMagic()) {
-            if (student.getApparition() < student1.getApparition()) {
-                System.out.println("Студент " + student1.getName() + " в сравнении со студентом " + student.getName()
-                        + " обладает бОльшей мощностью магии и большим растоянием трансгрессии.");
-            } else if (student.getApparition() > student1.getApparition()) {
-                System.out.println("Студент " + student1.getName() + " в сравнении со студентом " + student.getName()
-                        + " обладает бОльшей мощностью магии, но меньшим растоянием трансгрессии.");
-            }
+    public String compare(Hogwarts student, Hogwarts student1) {
+        int studentSum = student.getPowerOfMagic() + student.getApparition();
+        int studentSum1 = student1.getPowerOfMagic() + student1.getApparition();
+        if (studentSum > studentSum1) {
+            return student.getName() +
+                    " более сильный студент по основным способностям, нежели " + student1.getName();
+        } else if (studentSum == studentSum1) {
+            return  "Оба студента равны по основным способностям";
+        } else if (studentSum < studentSum1) {
+            return student1.getName() +
+                    " более сильный студент по основным способностям, нежели " + student.getName();
         }
+        return "Один из студентов или оба не вляются учениками Хогвартса.";
     }
 
     public abstract void description();
