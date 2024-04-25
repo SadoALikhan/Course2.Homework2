@@ -20,5 +20,6 @@ public class Main {
         student[11] = new Ravenclaw("Маркус Белби", 71, 41, 31, 51, 61, 81);
         System.out.println(student[0].toString());
         student[1].compare(student[1], student[3]);
+
     }
 }

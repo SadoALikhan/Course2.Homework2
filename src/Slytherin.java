@@ -61,4 +61,20 @@ public class Slytherin extends Hogwarts {
                 this.determination + ", амбициозность равна " + this.ambition + ", находчивость равна " +
                 this.resourcefulness + ", жажда власти равна " + this.lustForPower;
     }
+
+    public void compareSlytherin(Slytherin student, Slytherin student1) {
+        int studentSum = student.getCunning() + student.getDetermination() + student.getAmbition() +
+                student.getResourcefulness() + student.getLustForPower();
+        int studentSum1 = student1.getCunning() + student1.getDetermination() + student1.getAmbition() +
+                student1.getResourcefulness() + student1.getLustForPower();
+        if (studentSum > studentSum1) {
+            System.out.println(student.getName() +
+                    " более сильный студент на факультете Слизерин, нежели " + student1.getName());
+        } else if (studentSum == studentSum1) {
+            System.out.println("Оба студента факультета Слизерин равны по сумме баллов");
+        } else if (studentSum < studentSum1) {
+            System.out.println(student1.getName() +
+                    " более сильный студент на факультете Слизерин, нежели " + student.getName());
+        }
+    }
 }
