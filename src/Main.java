@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Gryffindor harry = new Gryffindor("Гарри Поттер", 88, 79, 81, 56, 61);
+        Gryffindor harry = new Gryffindor("Гарри Поттер", 89, 79, 81, 56, 61);
         Gryffindor hermione = new Gryffindor("Гермиона Грейнджер", 77, 81, 66, 54, 46);
         Gryffindor ron = new Gryffindor("Рон Уизли", 66, 69, 55, 46, 71);
         Slytherin draco = new Slytherin("Драко Малфой", 81, 82, 44,
