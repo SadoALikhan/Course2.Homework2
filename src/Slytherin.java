@@ -56,11 +56,9 @@ public class Slytherin extends Hogwarts {
     }
 
     @Override
-    public void description() {
-        System.out.println("У студента " + this.getName() + " такие качества как: сила магии равна "
-                + this.getPowerOfMagic() + ", расстояние трансгрессии равна " + this.getApparition() +
-                ", хитрость равна " + this.cunning + ", решительность равна " +
+    public String toString() {
+        return super.toString() + ", хитрость равна " + this.cunning + ", решительность равна " +
                 this.determination + ", амбициозность равна " + this.ambition + ", находчивость равна " +
-                this.resourcefulness + ", жажда власти равна " + this.lustForPower);
+                this.resourcefulness + ", жажда власти равна " + this.lustForPower;
     }
 }

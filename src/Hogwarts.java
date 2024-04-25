@@ -29,20 +29,23 @@ public abstract class Hogwarts {
         this.apparition = apparition;
     }
 
-    public String compare(Hogwarts student, Hogwarts student1) {
+    public void compare(Hogwarts student, Hogwarts student1) {
         int studentSum = student.getPowerOfMagic() + student.getApparition();
         int studentSum1 = student1.getPowerOfMagic() + student1.getApparition();
         if (studentSum > studentSum1) {
-            return student.getName() +
-                    " более сильный студент по основным способностям, нежели " + student1.getName();
+            System.out.println(student.getName() +
+                    " более сильный студент по основным способностям, нежели " + student1.getName());
         } else if (studentSum == studentSum1) {
-            return  "Оба студента равны по основным способностям";
+            System.out.println("Оба студента равны по основным способностям");
         } else if (studentSum < studentSum1) {
-            return student1.getName() +
-                    " более сильный студент по основным способностям, нежели " + student.getName();
+            System.out.println(student1.getName() +
+                    " более сильный студент по основным способностям, нежели " + student.getName());
         }
-        return "Один из студентов или оба не вляются учениками Хогвартса.";
     }
 
-    public abstract void description();
+    @Override
+    public String toString() {
+        return "У студента " + this.getName() + " такие качества как: сила магии равна "
+                + this.getPowerOfMagic() + ", расстояние трансгрессии равна " + this.getApparition();
+    }
 }

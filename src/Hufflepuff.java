@@ -35,10 +35,8 @@ public class Hufflepuff extends Hogwarts {
     }
 
     @Override
-    public void description() {
-        System.out.println("У студента " + this.getName() + " такие качества как: сила магии равна "
-                + this.getPowerOfMagic() + ", расстояние трансгрессии равна " + this.getApparition() +
-                ", трудолюбие равна " + this.hardworking + ", верность равна " +
-                this.loyal + ", честность равна " + this.honest);
+    public String toString() {
+        return super.toString() + ", трудолюбие равна " + this.hardworking + ", верность равна " +
+                this.loyal + ", честность равна " + this.honest;
     }
 }

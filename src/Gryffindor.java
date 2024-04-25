@@ -35,10 +35,8 @@ public class Gryffindor extends Hogwarts {
     }
 
     @Override
-    public void description() {
-        System.out.println("У студента " + this.getName() + " такие качества как: сила магии равна "
-                + this.getPowerOfMagic() + ", расстояние трансгрессии равна " + this.getApparition() +
-                ", благородство равна " + this.nobility + ", честь равна " +
-                this.honor + ", храбрость равна " + this.courage);
+    public String toString() {
+        return super.toString() + ", благородство равна " + this.nobility + ", честь равна " +
+                this.honor + ", храбрость равна " + this.courage;
     }
 }

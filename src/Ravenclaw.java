@@ -45,10 +45,8 @@ public class Ravenclaw extends Hogwarts {
     }
 
     @Override
-    public void description() {
-        System.out.println("У студента " + this.getName() + " такие качества как: сила магии равна "
-                + this.getPowerOfMagic() + ", расстояние трансгрессии равна " + this.getApparition() +
-                ", ум равна " + this.smart + ", мудрость равна " +
-                this.wise + ", остроумие равна " + this.witty + ", творчество равна " + this.creative);
+    public String toString() {
+        return super.toString() + ", ум равна " + this.smart + ", мудрость равна " +
+                this.wise + ", остроумие равна " + this.witty + ", творчество равна " + this.creative;
     }
 }
